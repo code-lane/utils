@@ -1,6 +1,6 @@
 {
   "name": "@code-lane/express-http-error",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Codelane's Express middleware to handle http errors in Express.",
   "main": "dist/index.js",
   "types": "dist/types/index.d.ts",
