@@ -1,5 +1,5 @@
 {
-  "name": "@codelane/logger",
+  "name": "@code-lane/logger",
   "version": "1.0.0",
   "description": "Codelane's logging middleware for Express.",
   "main": "dist/index.js",
@@ -13,16 +13,16 @@
   "author": "Codelane GmbH",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/codelane/utils",
+    "url": "git+https://github.com/code-lane/utils.git",
     "directory": "logger"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
   "bugs": {
-    "url": "https://github.com/codelane/utils/issues"
+    "url": "https://github.com/code-lane/utils/issues"
   },
-  "homepage": "https://github.com/codelane/utils/logger#readme",
+  "homepage": "https://github.com/code-lane/utils/logger#readme",
   "dependencies": {
     "express": "^4.17.1",
     "lodash": "^4.17.15",
