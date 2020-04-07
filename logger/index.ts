@@ -23,7 +23,7 @@ const format = winston.format.combine(
       multiLineJsonArguments
     ]
   } as { [key: string]: Format[] })[
-    String(process.env.LOGGER_IS_JSON ? process.env.LOGGER_IS_JSON : false)
+    String(process.env.LOGGER_IS_JSON ?? false)
   ]
 )
 
@@ -31,8 +31,8 @@ export const createLogger = (label = 'app'): Logger => {
   if (!winston.loggers.has(label)) {
     const level = String(
       process.env[`LOGGER_${label}_LEVEL`] ??
-        process.env[`LOGGER_${label.toUpperCase()}_LEVEL`] ??
-        process.env.LOGGER_LEVEL
+      process.env[`LOGGER_${label.toUpperCase()}_LEVEL`] ??
+      'info'
     )
     if (!winston.config.npm.levels[level]) {
       throw new Error(

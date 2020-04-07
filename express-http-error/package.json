@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/code-lane/utils/express-http-error#readme",
   "dependencies": {
-    "@code-lane/logger": "^1.0.5",
+    "@code-lane/logger": "^1.0.7",
     "@types/node": "^13.9.8",
     "@types/express": "^4.17.3",
     "express": "^4.17.1"
