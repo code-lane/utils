@@ -1,8 +1,7 @@
 import winston, { Logger } from 'winston'
 import { Format } from 'logform'
 import safeJsonStringify from 'safe-json-stringify'
-const omit = require('lodash/omit')
-const isEmpty = require('lodash/isEmpty')
+import { omit, isEmpty } from 'lodash'
 
 const multiLineJsonArguments = winston.format.printf((info) => {
   const other = omit(info, ['timestamp', 'label', 'level', 'message', '_inlineMeta'])
