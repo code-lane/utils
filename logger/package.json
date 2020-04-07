@@ -1,6 +1,6 @@
 {
   "name": "@code-lane/logger",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Codelane's logging middleware for Express.",
   "main": "dist/index.js",
   "types": "dist/types/index.d.ts",
@@ -24,19 +24,19 @@
   },
   "homepage": "https://github.com/code-lane/utils/logger#readme",
   "dependencies": {
+    "@types/node": "^13.9.8",
     "express": "^4.17.1",
+    "@types/express": "^4.17.3",
     "lodash": "^4.17.15",
+    "@types/lodash": "^4.14.149",
     "logform": "^2.1.2",
+    "@types/logform": "^1.10.1",
     "safe-json-stringify": "^1.2.0",
-    "winston": "^3.2.1"
+    "@types/safe-json-stringify": "^1.1.0",
+    "winston": "^3.2.1",
+    "@types/winston": "^2.4.4"
   },
   "devDependencies": {
-    "@types/express": "^4.17.3",
-    "@types/lodash": "^4.14.149",
-    "@types/logform": "^1.10.1",
-    "@types/node": "^13.9.8",
-    "@types/safe-json-stringify": "^1.1.0",
-    "@types/winston": "^2.4.4",
     "@typescript-eslint/eslint-plugin": "^2.26.0",
     "@typescript-eslint/parser": "^2.26.0",
     "eslint": "^6.8.0",
