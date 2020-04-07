@@ -1,6 +1,6 @@
 {
   "name": "@code-lane/logger",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Codelane's logging middleware for Express.",
   "main": "dist/index.js",
   "types": "dist/types/index.d.ts",
