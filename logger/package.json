@@ -3,7 +3,7 @@
   "version": "1.0.7",
   "description": "Codelane's logging middleware for Express.",
   "main": "dist/index.js",
-  "types": "dist/types/index.d.ts",
+  "types": "dist/index.d.ts",
   "scripts": {
     "prepare": "eslint . --ext .ts && tsc",
     "lint": "eslint . --ext .ts",
@@ -24,24 +24,28 @@
   },
   "homepage": "https://github.com/code-lane/utils/logger#readme",
   "dependencies": {
-    "@types/node": "^13.9.8",
-    "express": "^4.17.1",
-    "@types/express": "^4.17.3",
-    "lodash": "^4.17.15",
-    "@types/lodash": "^4.14.149",
-    "logform": "^2.1.2",
-    "safe-json-stringify": "^1.2.0",
-    "@types/safe-json-stringify": "^1.1.0",
-    "winston": "^3.2.1"
+    "express": "4.17.1",
+    "lodash": "4.17.15",
+    "logform": "2.1.2",
+    "safe-json-stringify": "1.2.0",
+    "winston": "3.2.1"
   },
   "devDependencies": {
+    "@types/express": "4.17.2",
+    "@types/lodash": "4.14.149",
+    "@types/node": "13.7.6",
+    "@types/safe-json-stringify": "^1.1.0",
     "@typescript-eslint/eslint-plugin": "^2.26.0",
     "@typescript-eslint/parser": "^2.26.0",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.10.1",
     "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
     "prettier": "2.0.2",
-    "typescript": "^3.8.3"
+    "typescript": "3.8.2"
   }
 }
