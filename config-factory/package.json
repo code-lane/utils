@@ -1,0 +1,42 @@
+{
+  "name": "@code-lane/config-factory",
+  "version": "1.0.0",
+  "description": "Codelane's config factory module.",
+  "main": "dist/src/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "prepare": "eslint . --ext .ts && tsc",
+    "lint:fix": "eslint . --ext .ts --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Codelane GmbH",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/code-lane/utils.git",
+    "directory": "config-factory"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "bugs": {
+    "url": "https://github.com/code-lane/utils/issues"
+  },
+  "license": "ISC",
+  "homepage": "https://github.com/code-lane/utils/config-factory#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "13.7.6",
+    "@typescript-eslint/eslint-plugin": "^2.26.0",
+    "@typescript-eslint/parser": "^2.26.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "prettier": "2.0.2",
+    "typescript": "3.8.2"
+  }
+}
