@@ -1,9 +1,9 @@
 {
   "name": "@code-lane/express-http-error",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Codelane's Express middleware to handle http errors in Express.",
   "main": "dist/index.js",
-  "types": "dist/types/index.d.ts",
+  "types": "dist/index.d.ts",
   "scripts": {
     "prepare": "eslint . --ext .ts && tsc",
     "lint": "eslint . --ext .ts",
@@ -22,21 +22,27 @@
   "bugs": {
     "url": "https://github.com/code-lane/utils/issues"
   },
+  "license": "ISC",
   "homepage": "https://github.com/code-lane/utils/express-http-error#readme",
   "dependencies": {
-    "@code-lane/logger": "^1.0.7",
-    "@types/node": "^13.9.8",
-    "@types/express": "^4.17.3",
-    "express": "^4.17.1"
+    "@code-lane/logger": "1.0.9",
+    "express": "4.17.1",
+    "source-map-support": "0.5.16"
   },
   "devDependencies": {
+    "@types/express": "4.17.2",
+    "@types/node": "13.7.6",
     "@typescript-eslint/eslint-plugin": "^2.26.0",
     "@typescript-eslint/parser": "^2.26.0",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.10.1",
     "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
     "prettier": "2.0.2",
-    "typescript": "^3.8.3"
+    "typescript": "3.8.2"
   }
 }

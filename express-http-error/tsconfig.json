@@ -1,6 +1,6 @@
 {
-    "declaration": true,
     "compilerOptions": {
+      "declaration": true,
       "module": "commonjs",
       "target": "ES2018",
       "strict": true,
@@ -23,9 +23,6 @@
     },
     "exclude": [
       "node_modules/*",
-      "types/*"
-    ],
-    "files": [
-      "./index.ts"
+      "dist/*"
     ]
   }
