@@ -5,7 +5,7 @@
 import { ENV_METADATA, PropertyMeta, ValueType, Env } from './env.decorator'
 import { SECRET_METADATA, Secret } from './secret.decorator'
 
-export default { loadConfig, Env, Secret }
+module.exports = { loadConfig, Env, Secret }
 
 function findEnvValue(propertyMeta: PropertyMeta): string | undefined {
   return propertyMeta.envVarName
