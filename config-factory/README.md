@@ -16,7 +16,7 @@ npm install @code-lane/config-factory
 ## Usage
 ```typescript
 // config/index.ts
-import { Env, secret, loadConfig } from '@code-lane/config-factory'
+import { Env, Secret, loadConfig } from '@code-lane/config-factory'
 
 type EnvValType = string | number | boolean | undefined | null
 
