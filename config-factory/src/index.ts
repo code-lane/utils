@@ -2,8 +2,10 @@
  * This module is based on https://www.npmjs.com/package/env-decorator v1.0.0
  * with some modifications (env-decorator didn't allow to apply more than 1 decorator)
  */
-import { ENV_METADATA, PropertyMeta, ValueType } from './env.decorator'
-import { SECRET_METADATA } from './secret.decorator'
+import { ENV_METADATA, PropertyMeta, ValueType, Env } from './env.decorator'
+import { SECRET_METADATA, Secret } from './secret.decorator'
+
+export { loadConfig, Env, Secret }
 
 function findEnvValue(propertyMeta: PropertyMeta): string | undefined {
   return propertyMeta.envVarName
@@ -39,7 +41,7 @@ function getEnvValue(envs: any, key: string | number | symbol): any | undefined 
   return undefined
 }
 
-export default function loadConfig<T extends object>(Config: new () => T): T {
+function loadConfig<T extends object>(Config: new () => T): T {
   const config: T = new Config()
   return new Proxy(config, {
     get(target: any, p: string | number | symbol): any {
