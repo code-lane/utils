@@ -1,4 +1,5 @@
 import { Request, Response, NextFunction } from 'express'
+import { HttpError as RoutingError } from 'routing-controllers'
 import logger from '@code-lane/logger'
 
 if (process.env.NODE_ENV === 'development') {
@@ -414,7 +415,9 @@ export function errorMiddleware(
   let error = err
   if (!error.toHttpResult) {
     try {
-      if (error instanceof Error) {
+      if (error instanceof RoutingError) {
+        error = new HttpError(err.httpCode, error.message, error, error.name)
+      } else if (error instanceof Error) {
         logger.error(`Unexpected Error \n${error}`)
         error = new HttpError(
           HttpStatusCodes.InternalServerError,
@@ -440,7 +443,8 @@ export function errorMiddleware(
       ip: req.ip
     })
   }
-
-  res.status(error.httpCode)
-  res.send(error.toHttpResult()).end()
+  if (!res.headersSent) {
+    res.status(error.httpCode).send(error.toHttpResult()).end()
+  }
+  return
 }

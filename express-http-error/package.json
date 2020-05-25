@@ -1,6 +1,6 @@
 {
   "name": "@code-lane/express-http-error",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "Codelane's Express middleware to handle http errors in Express.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -43,6 +43,7 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
     "prettier": "2.0.2",
+    "routing-controllers": "^0.8.1",
     "typescript": "3.8.2"
   }
 }
