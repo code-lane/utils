@@ -2,12 +2,7 @@
 NPM module with the necessary middleware for HTTP error handling in Express projects using Typescript.
 
 ## Installation
-Before installing, ensure that you have set @code-lane's registry in your npm configuration:
-
-```bash
-npm config set @code-lane:registry https://npm.pkg.github.com
-```
-You must also be logged in with appropriate credentials. Once this is done, you can proceed to install it like any npm package:
+Ensure you have followed the configuration steps described in thhe repository's [README](https://github.com/code-lane/utils/blob/master/README.md).
 
 ```bash
 npm install @code-lane/express-http-error
