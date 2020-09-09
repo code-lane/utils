@@ -2,12 +2,7 @@
 An NPM package containing a configuration factory that allows the usage of multiple decorators.
 
 ## Installation
-Before installing, ensure that you have set @code-lane's registry in your npm configuration:
-
-```bash
-npm config set @code-lane:registry https://npm.pkg.github.com
-```
-You must also be logged in with appropriate credentials. Once this is done, you can proceed to install it like any npm package:
+Before installing, ensure you have followed the configuration steps described in the repository's [README](https://github.com/code-lane/utils/blob/master/README.md)
 
 ```bash
 npm install @code-lane/config-factory
