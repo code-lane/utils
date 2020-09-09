@@ -3,12 +3,19 @@ An NPM package containing a modification of the Winston logger for Codelane's Ex
 
 ## Installation
 Before installing, ensure that you have set @code-lane's registry in your npm configuration:
-
 ```bash
 npm config set @code-lane:registry https://npm.pkg.github.com
 ```
-You must also be logged in with appropriate credentials. Once this is done, you can proceed to install it like any npm package:
 
+You must also be logged in with appropriate credentials.
+```bash
+npm login --registry=https://npm.pkg.github.com
+> Username: USERNAME
+> Password: TOKEN
+> Email: PUBLIC-EMAIL-ADDRESS
+```
+
+Once this is done, you can proceed to install it like any npm package:
 ```bash
 npm install @code-lane/logger
 ```
